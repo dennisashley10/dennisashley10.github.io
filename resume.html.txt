@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashley Dennis | Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">AD</a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a class="active pill" href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p class="eyebrow">Resume</p>
+    <h1>Resume</h1>
+    <p class="subhead">
+      Upload your PDF as <span class="accent">assets/resume.pdf</span> and this button will work.
+    </p>
+
+    <section class="card">
+      <div class="row">
+        <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Open Resume PDF</a>
+        <a class="btn ghost" href="assets/resume.pdf" download>Download</a>
+      </div>
+
+      <hr class="sep" />
+
+      <p class="muted">
+        If the button shows a 404, it means the PDF isn’t uploaded yet (or the filename doesn’t match).
+      </p>
+    </section>
+
+    <footer class="footer">© <span id="y"></span> Ashley Dennis</footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

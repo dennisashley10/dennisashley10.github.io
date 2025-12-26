@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashley Dennis | Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">AD</a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a class="pill" href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p class="eyebrow">Projects</p>
+    <h1>Selected work</h1>
+    <p class="subhead">Replace the links + text with your real GitHub/writeups when ready.</p>
+
+    <div class="grid-3">
+      <article class="project">
+        <div class="project-top">
+          <h3>Smoke Alarm Controller</h3>
+          <span class="chip">Verilog</span>
+        </div>
+        <p class="muted">Designed a controller system with clear state behavior and board testing workflow.</p>
+        <div class="row">
+          <a class="tag" href="#" target="_blank" rel="noreferrer">Code</a>
+          <a class="tag" href="#" target="_blank" rel="noreferrer">Write-up</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-top">
+          <h3>4-bit Adder/Subtractor</h3>
+          <span class="chip">Digital Logic</span>
+        </div>
+        <p class="muted">Implemented arithmetic module and verified outputs across test cases.</p>
+        <div class="row">
+          <a class="tag" href="#" target="_blank" rel="noreferrer">Code</a>
+          <a class="tag" href="#" target="_blank" rel="noreferrer">Demo</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-top">
+          <h3>2-Digit BCD Counter</h3>
+          <span class="chip">FPGA</span>
+        </div>
+        <p class="muted">Frequency divider + BCD logic + 7-seg display output with up/down controls.</p>
+        <div class="row">
+          <a class="tag" href="#" target="_blank" rel="noreferrer">Code</a>
+          <a class="tag" href="#" target="_blank" rel="noreferrer">Write-up</a>
+        </div>
+      </article>
+    </div>
+
+    <footer class="footer">© <span id="y"></span> Ashley Dennis</footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

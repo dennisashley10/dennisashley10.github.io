@@ -3,216 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ashley Dennis | Student Portfolio</title>
-  <meta name="description" content="Ashley Dennis — Computer Engineering & Mathematics student portfolio." />
+  <title>Ashley Dennis | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header class="nav">
-    <a class="brand" href="#top">AD</a>
-
-    <nav class="links" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#highlights">Highlights</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact" class="pill">Contact</a>
+    <a class="brand" href="index.html">AD</a>
+    <nav class="links">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a class="pill" href="resume.html">Resume</a>
     </nav>
   </header>
 
-  <main id="top" class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-left">
-        <p class="eyebrow">Computer Engineering • Mathematics</p>
-        <h1>Ashley Dennis</h1>
-        <p class="subhead">
-          Student engineer focused on <span class="accent">embedded systems</span>, <span class="accent">digital design</span>,
-          and building practical tech that helps people.
+  <main class="container">
+    <p class="eyebrow">Computer Engineering • Mathematics</p>
+    <h1>Ashley Dennis</h1>
+    <p class="subhead">
+      Student engineer focused on <span class="accent">embedded systems</span>, <span class="accent">digital design</span>,
+      and building practical tech with real-world impact.
+    </p>
+
+    <div class="row">
+      <a class="btn" href="projects.html">View Projects</a>
+      <a class="btn ghost" href="about.html">About Me</a>
+      <a class="btn ghost" href="resume.html">Resume</a>
+    </div>
+
+    <hr class="sep" />
+
+    <div class="grid-2">
+      <section class="card">
+        <h2>Quick intro</h2>
+        <p class="muted">
+          I’m a student at the FAMU-FSU College of Engineering. I love hands-on work—labs, debugging,
+          and building things that actually run on hardware.
         </p>
+        <p class="muted">
+          I’m currently building my portfolio for internships in hardware/embedded/FPGA.
+        </p>
+      </section>
 
-        <div class="cta-row">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="#resume">Resume</a>
+      <aside class="card">
+        <h2>Links</h2>
+        <p class="muted">Replace these with your real links.</p>
+        <div class="row">
+          <a class="tag" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="tag" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="tag" href="mailto:yourname@email.com">Email</a>
         </div>
+      </aside>
+    </div>
 
-        <div class="meta">
-          <span>FAMU-FSU College of Engineering</span>
-          <span class="dot">•</span>
-          <span>Expected Grad: May 2027</span>
-        </div>
-
-        <div class="social">
-          <!-- Replace # with your real links -->
-          <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-          <span class="dot">•</span>
-          <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-          <span class="dot">•</span>
-          <a href="#" target="_blank" rel="noreferrer">Email</a>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="card">
-          <p class="card-title">Currently</p>
-          <ul class="card-list">
-            <li>Building hardware + software projects for my portfolio</li>
-            <li>Exploring FPGA / AI-accelerator workflows</li>
-            <li>Growing leadership & service through campus orgs</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <p class="card-title">Interests</p>
-          <div class="tags">
-            <span class="tag">Embedded Systems</span>
-            <span class="tag">Digital Logic</span>
-            <span class="tag">FPGA</span>
-            <span class="tag">Hardware Internships</span>
-            <span class="tag">STEM Outreach</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        I’m Ashley, a Computer Engineering & Mathematics student at the FAMU-FSU College of Engineering.
-        I enjoy building systems that connect theory to real-world impact—especially projects involving
-        microcontrollers, digital logic, sensors, and control.
-      </p>
-      <p>
-        Outside of class, I’m active in student organizations and community service. I care deeply about
-        using engineering to support others, especially the disabled community and students coming up behind me.
-      </p>
-    </section>
-
-    <!-- HIGHLIGHTS -->
-    <section id="highlights" class="section">
-      <h2>Student Highlights</h2>
-
-      <div class="grid-3">
-        <div class="mini">
-          <p class="mini-title">Academics</p>
-          <p class="mini-body">
-            Double major in CPE + Math. Coursework includes digital logic design, computer architecture,
-            microprocessor-based system design, and signals/systems.
-          </p>
-        </div>
-
-        <div class="mini">
-          <p class="mini-title">Hands-on Labs</p>
-          <p class="mini-body">
-            Verilog/Quartus builds, board bring-up, debugging, and documentation.
-            I like projects where the output is tangible and testable.
-          </p>
-        </div>
-
-        <div class="mini">
-          <p class="mini-title">Leadership & Service</p>
-          <p class="mini-body">
-            Engineering community involvement + STEM outreach/tutoring.
-            I’m driven by representation and creating pathways for others.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p class="muted">A few things I’ve built / am building. (We can swap these for your real ones.)</p>
-      </div>
-
-      <div class="projects">
-        <article class="proj">
-          <div class="proj-top">
-            <h3>Smoke Alarm Controller (Verilog)</h3>
-            <span class="chip">Digital Logic</span>
-          </div>
-          <p class="muted">
-            Designed a controller system in Quartus/Verilog with clear state behavior and board testing workflow.
-          </p>
-          <div class="proj-links">
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
-            <span class="dot">•</span>
-            <a href="#" target="_blank" rel="noreferrer">Write-up</a>
-          </div>
-        </article>
-
-        <article class="proj">
-          <div class="proj-top">
-            <h3>4-bit Adder/Subtractor</h3>
-            <span class="chip">FPGA</span>
-          </div>
-          <p class="muted">
-            Implemented an arithmetic module and verified outputs across cases; focused on clean modular design.
-          </p>
-          <div class="proj-links">
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
-            <span class="dot">•</span>
-            <a href="#" target="_blank" rel="noreferrer">Demo</a>
-          </div>
-        </article>
-
-        <article class="proj">
-          <div class="proj-top">
-            <h3>Up/Down 2-Digit BCD Counter</h3>
-            <span class="chip">Verilog</span>
-          </div>
-          <p class="muted">
-            Frequency divider + BCD logic + 7-segment display output. Built for a DE1-SoC style workflow.
-          </p>
-          <div class="proj-links">
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
-            <span class="dot">•</span>
-            <a href="#" target="_blank" rel="noreferrer">Write-up</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- RESUME -->
-    <section id="resume" class="section">
-      <h2>Resume</h2>
-      <p class="muted">
-        Add your PDF to <code>/assets/resume.pdf</code> and this button will work.
-      </p>
-      <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p class="muted">Best way to reach me: email. I’m open to internships and project collaboration.</p>
-
-      <div class="contact-card">
-        <div>
-          <p class="contact-label">Email</p>
-          <p class="contact-value"><a href="mailto:yourname@email.com">yourname@email.com</a></p>
-        </div>
-        <div>
-          <p class="contact-label">LinkedIn</p>
-          <p class="contact-value"><a href="#" target="_blank" rel="noreferrer">linkedin.com/in/your-handle</a></p>
-        </div>
-        <div>
-          <p class="contact-label">GitHub</p>
-          <p class="contact-value"><a href="#" target="_blank" rel="noreferrer">github.com/your-handle</a></p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p class="muted">© <span id="y"></span> Ashley Dennis. Built with HTML & CSS.</p>
-    </footer>
+    <footer class="footer">© <span id="y"></span> Ashley Dennis</footer>
   </main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>

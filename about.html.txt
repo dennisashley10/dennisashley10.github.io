@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashley Dennis | About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">AD</a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a class="pill" href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p class="eyebrow">About</p>
+    <h1>Hi, I’m Ashley.</h1>
+
+    <section class="card">
+      <p class="muted">
+        I’m a Computer Engineering & Mathematics student at the FAMU-FSU College of Engineering.
+        I enjoy building systems that connect theory to real results—especially embedded systems,
+        digital logic, and hardware-focused projects.
+      </p>
+      <p class="muted">
+        I care about using engineering to serve people and expand representation in tech.
+        I’m especially motivated by community impact and supporting others through STEM.
+      </p>
+
+      <div class="row">
+        <span class="tag">Embedded Systems</span>
+        <span class="tag">Verilog / Quartus</span>
+        <span class="tag">Digital Logic</span>
+        <span class="tag">FPGA</span>
+        <span class="tag">STEM Outreach</span>
+      </div>
+    </section>
+
+    <footer class="footer">© <span id="y"></span> Ashley Dennis</footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
